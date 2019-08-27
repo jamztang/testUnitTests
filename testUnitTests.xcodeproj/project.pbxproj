@@ -49,6 +49,7 @@
 		1A4BC28B2313D96D006AFB97 /* testUnitTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUnitTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4BC28F2313D96D006AFB97 /* testUnitTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUnitTestsUITests.swift; sourceTree = "<group>"; };
 		1A4BC2912313D96D006AFB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4BC29D2313DA2B006AFB97 /* testUnitTests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testUnitTests.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		1A4BC26C2313D96C006AFB97 /* testUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				1A4BC29D2313DA2B006AFB97 /* testUnitTests.entitlements */,
 				1A4BC26D2313D96C006AFB97 /* AppDelegate.swift */,
 				1A4BC26F2313D96C006AFB97 /* SceneDelegate.swift */,
 				1A4BC2712313D96C006AFB97 /* ViewController.swift */,
@@ -434,7 +436,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testUnitTests/testUnitTests.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testUnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,6 +447,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,7 +457,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testUnitTests/testUnitTests.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testUnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,6 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
