@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import DateToolsSwift
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let timeAgoDate = 2.days.earlier
+        print("Time Ago: ", timeAgoDate.timeAgoSinceNow)
     }
 
 

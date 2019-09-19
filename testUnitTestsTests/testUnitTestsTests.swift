@@ -20,11 +20,8 @@ class testUnitTestsTests: XCTestCase {
     }
 
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        #if targetEnvironment(macCatalyst)
-        XCTAssert(false)
-        #endif
+        let timeAgoDate = 2.days.earlier
+        XCTAssertEqual(timeAgoDate.timeAgoSinceNow, "2 days ago")
     }
 
     func testPerformanceExample() {
